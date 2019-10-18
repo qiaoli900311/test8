@@ -1,0 +1,63 @@
+@import "./var.styl"
+
+// 开发与生产样式顺序不一致问题:
+// 开发环境 先加载global样式, 再加载组件样式
+// 生产环境 先加载组件样式, 再加载global样式
+// 因此, 如果用户样式与组件样式是相同优先级, 需要靠样式加载顺序来决定权重, 则开发与生产看到的界面是不一样的
+// 解决方案: 所有#__nuxt元素包含的子元素, 都加一个祖先选择器#__nuxt, 强制用户样式一定比组件样式优先级更高
+
+#__nuxt,#__layout{
+  height 100%
+}
+
+.text-center {
+  text-align: center;
+}
+.blue {
+  color: #6495FE;
+}
+.gray {
+  color: #828282;
+}
+.font-s {
+  font-size: 12px;
+}
+
+.font-m {
+  font-size: 14px;
+}
+
+.font-l {
+  font-size: 16px;
+}
+
+.font-xl {
+  font-size: 18px;
+}
+.fixed-box { // fixed-btn 用relative的父元素站位
+  position: relative;
+  height: 60px;
+}
+
+// 覆写顶部标签页高度，类名加在 van-tabs 组件上
+.page-with-top-tabs {
+  .van-tab {
+
+    &.van-tab--active {
+      color: $primary-color;
+    }
+  }
+}
+
+// flex 布局
+.flex-between-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.van-tab {
+  &--active {
+    color: $primary-color;
+  }
+}

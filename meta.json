@@ -1,0 +1,16 @@
+{
+    "name": "zhoudafu-mobile",
+    "version": "1.0.0",
+    "title": "周大福商场",
+    "description": "",
+    "type": "template",
+    "platform": [
+        "MOBILE"
+    ],
+    "homePage": "/materials/24/dist0928174aeb659ea7ae70a01383385656/index.html",
+    "category": "客户端",
+    "screenshot": "/screenshots/0928174aeb659ea7ae70a01383385656.png",
+    "path": "templates/ZhoudafuMobile",
+    "origin": "http://gitlab.deepexi.top/deepexi/deepexi-serverless/serverless-material.git",
+    "hash": "0928174aeb659ea7ae70a01383385656"
+}

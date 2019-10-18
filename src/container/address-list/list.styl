@@ -1,0 +1,101 @@
+.address-list {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+
+  &__disabled-text {
+    color: #7d7e80;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  &__new {
+    width: 100%;
+    border: none!important;
+    border-radius: 0!important;
+    position: fixed!important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__noData {
+    margin: auto;
+  }
+
+  .address-item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin-top: 15px;
+    background-color: #fff;
+    user-select: none;
+    color: #333333;
+    font-size: 16px;
+
+    &__icon {
+      position: absolute;
+      z-index: 5;
+      // width: 16px;
+      // height: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      &&--left {
+        left: 0;
+      }
+      &&--right {
+        right: 0;
+      }
+    }
+
+    &__info {
+      position: relative;
+      padding: 15px 0 15px;
+      &--left {
+        padding-left: 27px;
+      }
+      &--right {
+        padding-right: 30px;
+      }
+    }
+
+    &__address {
+      text-align: justify;
+      font-size: 14px;
+    }
+
+    &__user {
+      display: flex;
+      overflow: hidden;
+      line-height: 24px;
+      margin-bottom: 5px;
+      span {
+        flex: 1;
+        display: block;
+      }
+      &--phone {
+        text-align: right;
+        overflow: hidden;
+      }
+      &--name {
+        text-align: left;  
+      }
+    }
+
+    &__add {
+      padding: 12px 0 12px;
+      color: #666666;
+      font-size: 14px;
+    }
+
+    .van-hairline--top {
+      position: absolute;
+      left: 0;
+      width: 100%
+    }
+  }
+}
